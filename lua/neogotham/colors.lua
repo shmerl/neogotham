@@ -1,4 +1,4 @@
--- base gotham pallette
+-- base gotham palette
 local gotham = {
    [0] = '#0c1014',
    [1] = '#11151c',
@@ -27,7 +27,7 @@ local Colors = {
    night_sea  = '#4d618e',
    neon_green = '#00ff00',
 
-   -- light colors boost regular named colors to value 100 in HSV
+   -- light colors boost regular named colors to value 100 (as Value in HSV)
    light_red    = '#ff4033',
    light_yellow = '#ffe054',
    light_green  = '#40ffd0',
