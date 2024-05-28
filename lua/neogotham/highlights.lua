@@ -90,8 +90,8 @@ local common = {
 }
 
 local neogotham = {
-   Search     = { fg = gotham[3], bg = colors.yellow },
-   CurSearch  = { fg = gotham[3], bg = colors.light_yellow },
+   Search     = { fg = colors.night_sea, bg = colors.yellow },
+   CurSearch  = { fg = colors.night_sea, bg = colors.light_yellow },
    MatchParen = { fg = colors.neon_green, bold = true },
 
    -- new style of spelling with underculr highlihgting
