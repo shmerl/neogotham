@@ -56,11 +56,11 @@ function Neogotham:set_colors()
       -- neogotham / cyberpunk style specific highlights
       highlights.set(highlights.neogotham)
    else
-      -- alternatively, old gotham specfic highlights
+      -- alternatively, old gotham specific highlights
       highlights.set(highlights.oldgotham)
    end
 
-   -- revisit terminal colors setting after theme is complete in general
+   -- TODO: revisit terminal colors setting
    highlights:set_terminal_colors()
 end
 

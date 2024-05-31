@@ -67,5 +67,5 @@ Installation with lazy.nvim as a secondary color theme (for manual loading)
 ```
 
 ## Special thanks and credits
-* [@whatyouhide](https://github.com/whatyouhide) - the author of original [Vim Gotham](https://github.com/whatyouhide/vim-gotham)
+* [@whatyouhide](https://github.com/whatyouhide) - author of the original [Vim Gotham](https://github.com/whatyouhide/vim-gotham)
 * [@TheGorondorf](https://bsky.app/profile/rayfrutos.bsky.social) - Neo Gotham banner art

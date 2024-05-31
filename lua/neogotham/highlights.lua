@@ -72,7 +72,7 @@ local common = {
    Type       = { fg = colors.orange },
    Underlined = { fg = colors.yellow, underline = true }, -- <a> tags
 
-   -- TODO: go through these more thorougly
+   -- TODO: go through these more thoroughly
    -- tentative fixes for changes introduced in neovim 0.10
    ['@variable'] = { fg = fg }, -- same as Identifier as before it was a link
    Delimiter = { fg = gotham[5] },
@@ -94,7 +94,7 @@ local neogotham = {
    CurSearch  = { fg = colors.night_sea, bg = colors.light_yellow },
    MatchParen = { fg = colors.neon_green, bold = true },
 
-   -- new style of spelling with underculr highlihgting
+   -- new style of spelling with undercurl highlighting
    SpellBad   = { sp = colors.light_red, undercurl = true },
    SpellCap   = { sp = colors.light_yellow, undercurl = true },
    SpellRare  = { sp = colors.light_cyan, undercurl = true },
@@ -107,7 +107,7 @@ local oldgotham = {
    IncSearch  = { reverse = true }, -- links to CurSearch by default (see CurSearch in neogotham section)
    MatchParen = { fg = fg, bg = colors.orange },
 
-   -- old style of spelling with background highlihgting
+   -- old style of spelling with background highlighting
    SpellBad   = { fg = gotham[7], bg = colors.red },
    SpellCap   = { fg = gotham[7], bg = colors.blue },
    SpellRare  = { fg = gotham[7], bg = colors.violet },
