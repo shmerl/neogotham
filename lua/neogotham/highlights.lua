@@ -17,7 +17,8 @@ local bg2 = gotham[1] -- secondary background for UI elements
 -- :help lsp-semantic-highlight
 
 local common = {
-   Normal = { fg = fg, bg = bg },
+   Normal      = { fg = fg, bg = bg },
+   NormalFloat = { link = 'Pmenu' }, -- floating window
 
    -- cursor and cursor lines
    Cursor       = { fg = gotham[1], bg = gotham[6] },
@@ -45,7 +46,7 @@ local common = {
    NonText      = { fg = colors.blue }, -- interface tildes
    Pmenu        = { bg = gotham[2] }, -- vertical popup menu elements
    PmenuSel     = { fg = gotham[7], bg = colors.blue },
-   PmenuSbar    = { bg = gotham[2] },
+   PmenuSbar    = { link = 'Pmenu' }, -- fill menu scrollbar with same color as menu itself
    PmenuThumb   = { bg = colors.blue },
    SpecialKey   = { fg = gotham[3] }, -- non whitespace special characters in 'listchars'. See ':help listchars'. Whitespace group links to NonText for whitespace ones
    StatusLine   = { fg = gotham[5], bg = gotham[2] }, -- also sets the color of the non-active entries in the wildmenu.
@@ -58,11 +59,14 @@ local common = {
    WinSeparator = { fg = colors.blue, bg = bg2 }, -- splits and window separators
 
    -- syntax elements
+   ['@variable'] = { link = 'Identifier' },
    Comment    = { fg = colors.blue },
    Constant   = { fg = colors.magenta },
+   Delimiter  = { fg = gotham[5] },
    Function   = { fg = colors.night_sea },
    Identifier = { fg = fg },
    Number     = { fg = colors.orange },
+   Operator   = { link = 'Statement' },
    PreProc    = { fg = colors.red },
    Special    = { fg = colors.orange },
    Statement  = { fg = gotham[5] },
@@ -74,9 +78,6 @@ local common = {
 
    -- TODO: go through these more thoroughly
    -- tentative fixes for changes introduced in neovim 0.10
-   ['@variable'] = { fg = fg }, -- same as Identifier as before it was a link
-   Delimiter = { fg = gotham[5] },
-   Operator  = { fg = gotham[5] }, -- same as Statement as before it was a link
    Added     = { fg = colors.green }, -- TODO: figure out what that is. light_green in default theme
    Changed   = { fg = colors.blue }, -- TODO: figure out what that is. light_cyan in default theme
    Removed   = { fg = colors.red }, -- TODO: figure out what that is. light_red in default theme
@@ -103,7 +104,7 @@ local neogotham = {
 
 local oldgotham = {
    Search     = { fg = gotham[2], bg = colors.yellow },
-   CurSearch  = { fg = gotham[2], bg = colors.yellow },
+   CurSearch  = { link = 'Search' },
    IncSearch  = { reverse = true }, -- links to CurSearch by default (see CurSearch in neogotham section)
    MatchParen = { fg = fg, bg = colors.orange },
 
