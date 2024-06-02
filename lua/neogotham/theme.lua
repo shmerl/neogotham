@@ -137,24 +137,24 @@ local terminal = {
    terminal_color_15 = gotham[6]
 }
 
-local Highlights = {
+local Theme = {
    common = common,
    neogotham = neogotham,
    oldgotham = oldgotham,
    terminal = terminal
 }
 
-function Highlights.set(highlights)
+function Theme.set_highlights(highlights)
    for group, value in pairs(highlights) do
       vim.api.nvim_set_hl(0, group, value)
    end
 end
 
 -- About built-in terminal colors, see :help terminal-config
-function Highlights:set_terminal_colors()
+function Theme:set_terminal_colors()
    for term_color, value in pairs(self.terminal) do
       vim.g[term_color] = value
    end
 end
 
-return Highlights
+return Theme

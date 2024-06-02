@@ -1,4 +1,4 @@
-local highlights = require("neogotham/highlights")
+local theme = require("neogotham/theme")
 
 local Neogotham = {
    name = 'neogotham',
@@ -50,18 +50,18 @@ end
 
 function Neogotham:set_colors()
    -- common highlights
-   highlights.set(highlights.common)
+   theme.set_highlights(theme.common)
 
    if not self.config.oldgotham then
       -- neogotham / cyberpunk style specific highlights
-      highlights.set(highlights.neogotham)
+      theme.set_highlights(theme.neogotham)
    else
       -- alternatively, old gotham specific highlights
-      highlights.set(highlights.oldgotham)
+      theme.set_highlights(theme.oldgotham)
    end
 
    -- TODO: revisit terminal colors setting
-   highlights:set_terminal_colors()
+   theme:set_terminal_colors()
 end
 
 return Neogotham:new()
