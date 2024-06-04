@@ -4,7 +4,7 @@
 
 Neo Gotham is a very dark Neovim color theme based on the classic [Vim Gotham](https://github.com/whatyouhide/vim-gotham).
 
-![Theme screenshot](https://github.com/shmerl/neogotham/assets/310927/bf986e30-6f30-46dd-8baa-ce48562b77c9)
+![Theme screenshot](https://github.com/shmerl/neogotham/assets/310927/9675ef52-0817-4bc8-a177-29017e81ee20)
 
 The motivation was to write the theme using Lua and to make it compatible with recent Neovim.
 
