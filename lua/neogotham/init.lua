@@ -7,11 +7,6 @@ local Neogotham = {
    }
 }
 
-function Neogotham:new()
-   -- do any internal dynamic module initialization here
-   return self
-end
-
 -- called every time when theme is selected
 function Neogotham:load()
    vim.cmd.highlight('clear')
@@ -64,4 +59,4 @@ function Neogotham:set_colors()
    theme:set_terminal_colors()
 end
 
-return Neogotham:new()
+return Neogotham
