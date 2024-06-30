@@ -19,13 +19,13 @@ local Colors = {
    yellow  = '#edb443',
    green   = '#2aa889',
    blue    = '#195466',
-   violet  = '#4e5166',
+   violet  = '#4d618e',
    magenta = '#888ca6',
    cyan    = '#33859e',
 
-   -- neogotham added colors
-   night_sea  = '#4d618e',
+   -- extra colors
    neon_green = '#00ff00',
+   metal_gray = '#4e5166',
 
    -- light colors boost regular named colors to value 100 (as Value in HSV)
    light_red    = '#ff4033',
