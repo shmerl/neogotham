@@ -4,7 +4,8 @@ local Neogotham = {
    name = 'neogotham',
    config = {
       oldgotham = false
-   }
+   },
+   colors = theme.colors
 }
 
 -- called every time when theme is selected
