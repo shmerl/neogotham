@@ -141,7 +141,8 @@ local Theme = {
    common = common,
    neogotham = neogotham,
    oldgotham = oldgotham,
-   terminal = terminal
+   terminal = terminal,
+   colors = colors
 }
 
 function Theme.set_highlights(highlights)
