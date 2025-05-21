@@ -79,7 +79,7 @@ local common = {
 
    -- diffs
    DiffAdd     = { fg = 'none', bg = util.modify_brightness(colors.neon_green, 0.223) },
-   DiffDelete  = { fg = 'none', bg = util.modify_brightness(colors.red, 0.55) },
+   DiffDelete  = { fg = util.modify_brightness(colors.red, (0xff / util.red(colors.red))), bg = util.modify_brightness(colors.red, 0.55) }, -- (0xff / util.red(colors.red)) makes modifier to maximize brightness without distortion
    DiffChange  = { fg = 'none', bg = util.modify_brightness(colors.blue, 0.55) },
    DiffText    = { fg = 'none', bg = colors.cyan },
 
