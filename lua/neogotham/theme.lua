@@ -1,4 +1,5 @@
-local colors = require("neogotham/colors")
+local colors = require('neogotham/colors')
+local util = require('neogotham/util')
 
 -- main gotham palette
 local gotham = colors.gotham
@@ -76,18 +77,15 @@ local common = {
    Type       = { fg = colors.orange },
    Underlined = { fg = colors.yellow, underline = true }, -- <a> tags
 
-   -- TODO: go through these more thoroughly
-   -- tentative fixes for changes introduced in neovim 0.10
-   Added     = { fg = colors.green }, -- TODO: figure out what that is. light_green in default theme
-   Changed   = { fg = colors.blue }, -- TODO: figure out what that is. light_cyan in default theme
-   Removed   = { fg = colors.red }, -- TODO: figure out what that is. light_red in default theme
-
    -- diffs
-   DiffAdd     = { fg = gotham[7], bg = colors.green },
-   DiffChange  = { fg = gotham[7], bg = colors.blue },
-   DiffText    = { fg = gotham[7], bg = colors.cyan },
-   DiffDelete  = { fg = gotham[7], bg = colors.red },
-   DiffSubname = { fg = colors.blue }, -- That's how it was in classic gotham. TODO: figure out what that is
+   DiffAdd     = { fg = 'none', bg = util.modify_brightness(colors.neon_green, 0.223) },
+   DiffDelete  = { fg = 'none', bg = util.modify_brightness(colors.red, 0.55) },
+   DiffChange  = { fg = 'none', bg = util.modify_brightness(colors.blue, 0.55) },
+   DiffText    = { fg = 'none', bg = colors.cyan },
+
+   Added       = { link = 'DiffAdd' }, -- TODO: figure out what that is. light_green in default theme
+   Removed     = { link = 'DiffDelete' }, -- TODO: figure out what that is. light_red in default theme
+   Changed     = { link = 'DiffChange' } -- TODO: figure out what that is. light_cyan in default theme
 }
 
 local neogotham = {
@@ -141,8 +139,7 @@ local Theme = {
    common = common,
    neogotham = neogotham,
    oldgotham = oldgotham,
-   terminal = terminal,
-   colors = colors
+   terminal = terminal
 }
 
 function Theme.set_highlights(highlights)
