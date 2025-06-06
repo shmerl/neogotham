@@ -36,34 +36,34 @@ This can also be applied on theme loading (see Examples).
 Installation with lazy.nvim as a primary color theme
 
 ```lua
-   {  'shmerl/neogotham',
-      lazy = false, -- to make sure it's loaded on startup
-      priority = 1000, -- to load before other plugins
-      config = function()
-         vim.cmd.colorscheme("neogotham")
-      end
-   }
+  { 'shmerl/neogotham',
+    lazy = false, -- to make sure it's loaded on startup
+    priority = 1000, -- to load before other plugins
+    config = function()
+      vim.cmd.colorscheme("neogotham")
+    end
+  }
 
 ```
 
 Installation with lazy.nvim as a primary color theme using optional old Gotham styles
 
 ```lua
-   {  'shmerl/neogotham',
-      lazy = false,
-      priority = 1000,
-      config = function()
-         require("neogotham"):setup({ oldgotham = true })
-         vim.cmd.colorscheme("neogotham")
-      end
-   }
+  { 'shmerl/neogotham',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("neogotham"):setup({ oldgotham = true })
+      vim.cmd.colorscheme("neogotham")
+    end
+  }
 
 ```
 
 Installation with lazy.nvim as a secondary color theme (for manual loading)
 
 ```lua
-   'shmerl/neogotham'
+  'shmerl/neogotham'
 ```
 
 ## Special thanks and credits
