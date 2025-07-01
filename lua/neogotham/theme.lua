@@ -77,15 +77,16 @@ local common = {
   Type       = { fg = colors.orange },
   Underlined = { fg = colors.yellow, underline = true }, -- <a> tags
 
-  -- diffs
+  -- diff mode
   DiffAdd     = { fg = 'none', bg = util.modify_brightness(colors.neon_green, 0.223) },
   DiffDelete  = { fg = colors.red, bg = util.modify_brightness(colors.red, 0.55) },
   DiffChange  = { fg = 'none', bg = util.modify_brightness(colors.blue, 0.55) },
   DiffText    = { fg = 'none', bg = colors.cyan },
 
-  Added       = { link = 'DiffAdd' }, -- TODO: figure out what that is. light_green in default theme
-  Removed     = { link = 'DiffDelete' }, -- TODO: figure out what that is. light_red in default theme
-  Changed     = { link = 'DiffChange' } -- TODO: figure out what that is. light_cyan in default theme
+  -- diff filetype (diffs, patches)
+  Added       = { link = 'DiffAdd' },
+  Removed     = { link = 'DiffDelete' },
+  Changed     = { link = 'DiffChange' }
 }
 
 local neogotham = {
