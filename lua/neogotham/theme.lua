@@ -79,7 +79,7 @@ local common = {
 
   -- diff mode
   DiffAdd     = { fg = 'none', bg = colors.muddy_green },
-  DiffDelete  = { fg = util.modify_brightness(colors.red, 1.1), bg = colors.muddy_red },
+  DiffDelete  = { fg = util.modify_brightness(colors.red, 1.025), bg = colors.muddy_red },
   DiffChange  = { fg = 'none', bg = util.modify_brightness(colors.blue, 0.55) },
   DiffText    = { fg = 'none', bg = colors.cyan },
 
