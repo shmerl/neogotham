@@ -78,8 +78,8 @@ local common = {
   Underlined = { fg = colors.yellow, underline = true }, -- <a> tags
 
   -- diff mode
-  DiffAdd     = { fg = 'none', bg = util.modify_brightness(colors.neon_green, 0.223) },
-  DiffDelete  = { fg = colors.red, bg = util.modify_brightness(colors.red, 0.55) },
+  DiffAdd     = { fg = 'none', bg = colors.muddy_green },
+  DiffDelete  = { fg = colors.red, bg = colors.muddy_red },
   DiffChange  = { fg = 'none', bg = util.modify_brightness(colors.blue, 0.55) },
   DiffText    = { fg = 'none', bg = colors.cyan },
 

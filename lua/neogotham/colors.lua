@@ -24,8 +24,10 @@ local Colors = {
   cyan    = '#33859e',
 
   -- extra colors
-  neon_green = '#00ff00',
-  metal_gray = '#4e5166',
+  muddy_red   = '#4b2526',
+  muddy_green = '#233726',
+  neon_green  = '#00ff00',
+  metal_gray  = '#4e5166',
 
   -- light colors boost regular named colors to value 100 (as Value in HSV)
   light_red    = '#ff4033',
